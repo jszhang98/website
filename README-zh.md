@@ -13,6 +13,57 @@ We're glad that you want to contribute!
 欢迎！本仓库包含了所有用于构建 [Kubernetes 网站和文档](https://kubernetes.io/)的内容。
 我们非常高兴您想要参与贡献！
 
+
+<!--
+## Running the website locally using Hugo
+-->
+## 使用Hugo在本地运行website
+<!--
+See the [official Hugo documentation](https://gohugo.io/getting-started/installing/) for Hugo installation instructions. Make sure to install the Hugo extended version specified by the `HUGO_VERSION` environment variable in the [`netlify.toml`](netlify.toml#L10) file.
+-->
+
+请参考[official Hugo documentation](https://gohugo.io/getting-started/installing/)获得安装指南. 确保安装Hugo的扩展版本，在[`netlify.toml`](netlify.toml#L10)文件中可以指定`HUGO_VERSION` 环境变量.
+
+<!--
+To run the website locally when you have Hugo installed:
+-->
+安装Hugo后，在本地运行website
+
+```bash
+git clone https://github.com/kubernetes/website.git
+cd website
+git submodule update --init --recursive
+hugo server --buildFuture
+```
+<!--
+This will start the local Hugo server on port 1313. Open up your browser to http://localhost:1313 to view the website. As you make changes to the source files, Hugo updates the website and forces a browser refresh.
+-->
+上面代码将在本地服务器1313端口启动hugo服务。打开浏览器输入 http://localhost:1313 查看网页。当你对源文件进行更新后，Hugo将会更新website并强制刷新浏览器。
+
+<!--
+## Get involved with SIG Docs
+-->
+
+## 参与SIG Docs
+<!--
+Learn more about SIG Docs Kubernetes community and meetings on the [community page](https://github.com/kubernetes/community/tree/master/sig-docs#meetings).
+-->
+了解更多关于SIG Docs 社区和会议，请参考[community page](https://github.com/kubernetes/community/tree/master/sig-docs#meetings).
+
+<!--
+You can also reach the maintainers of this project at:
+- [Slack](https://kubernetes.slack.com/messages/sig-docs)
+- [Mailing List](https://groups.google.com/forum/#!forum/kubernetes-sig-docs)
+-->
+
+你可以通过下面链接联系此项目的维护者：
+- [Slack](https://kubernetes.slack.com/messages/sig-docs)
+- [Mailing List](https://groups.google.com/forum/#!forum/kubernetes-sig-docs)
+
+
+
+
+
 <!--
 ## Contributing to the docs
  -->
